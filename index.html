@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message for my love</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            background-color: #fde8cd;
+            margin: 0;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #e44d26;
+        }
+
+        #loveMessage {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        #heart {
+            color: #e44d26;
+        }
+
+        p {
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>For My LABLAB NATHS</h1>
+    <div id="loveMessage"></div>
+    <p>ILOVEYOUUUUU</p>
+
+    <script>
+        function generateLoveMessage(name) {
+            const adjectives = ["beautiful", "amazing", "lovely", "charming", "wonderful"];
+            const feelings = ["makes my heart skip a beat", "brings joy to my life", "fills my days with happiness", "completes me"];
+
+            const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+            const randomFeeling = feelings[Math.floor(Math.random() * feelings.length)];
+
+            const loveMessage = `Dear ${name}, you are ${randomAdjective} and your presence ${randomFeeling}. <span id="heart">❤️</span>`;
+
+            return loveMessage;
+        }
+
+        const girlfriendName = "Nathalie";
+        const loveMessageForAngelina = generateLoveMessage(Nathalie);
+
+        document.getElementById("loveMessage").innerHTML = loveMessageFornathalie;
+    </script>
+</body>
+</html>
